@@ -30,7 +30,7 @@
 		
 	</head>
 	
-	<body>
+	<body style="background-color:#333333; color:#e0e0e0;">
 	
 		<!-- Navigation Bar  -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -47,11 +47,23 @@
 			</div>
 		</nav>
 		
-		<div>
-		<h1>Test</h1>
+		<div class="text-center back-primary">
+			<h1>Test</h1>
 		</div>
+
+		<div class ="container">
+			<div class="row">
+				<div class="col-sm-6 text-center">
+					<h3>Left Column</h3>
+				</div>
+				<div class="col-sm-6 text-center">
+					<h3>Right Column</h3>
+				</div>
+			</div>
+		</div>
+			
 	
-	<p> Test (Dynamic)</p>
+	<p> Test (default.html) </p>
 	
 	{% block content %}
 	{% endblock %}
