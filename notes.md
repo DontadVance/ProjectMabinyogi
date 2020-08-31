@@ -15,3 +15,8 @@ when using render_template and it saves us time on specifying the file path
 
   
 # Dylan
+## Learning Flask
+- added a .gitignore file; feel free to edit.
+- initiated templates and Jinja-friendly CSS links
+- added a static folder for CSS
+- added default.html; we can use this as our 'base' template. index.html extends default.html.
