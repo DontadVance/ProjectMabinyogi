@@ -2,10 +2,9 @@
 body {
 	overflow-x:hidden;
 	overflow-y:scroll;
-	background: #444444;
-	color: blue;
 }
 
 .back-primary {
 	background-color: #444444;
+	color: #999999;
 }
