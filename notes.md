@@ -20,3 +20,9 @@ when using render_template and it saves us time on specifying the file path
 - initiated templates and Jinja-friendly CSS links
 - added a static folder for CSS
 - added default.html; we can use this as our 'base' template. index.html extends default.html.
+
+## (9/1/2020)
+- added an 'about' page with route
+- making modifications to the index page, which will serve as our primary page for character creation;
+need to discuss and outline potential layouts before implementation.
+- **Note: May need to reload page + cache for proper updates. (Shift-Ctrl-R on Chrome).
