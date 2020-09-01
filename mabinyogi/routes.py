@@ -17,3 +17,8 @@ def homepage():
     -we must return that render_template function from our page function so that the application may be returned data when calling the page
         o i.e. when the app calls the homepage function to run our home page, it will be returned data from the render_template function
     '''
+
+@app.route('/')
+@app.route('/about') #notice we can specify more than one routing name for the same route
+def aboutpate():
+	return render_template('about.html')
