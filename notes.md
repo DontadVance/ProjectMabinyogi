@@ -15,7 +15,7 @@ when using render_template and it saves us time on specifying the file path
 
   
 # Dylan
-## Learning Flask
+### Learning Flask
 - added a .gitignore file; feel free to edit.
 - initiated templates and Jinja-friendly CSS links
 - added a static folder for CSS
