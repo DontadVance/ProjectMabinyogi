@@ -25,4 +25,4 @@ when using render_template and it saves us time on specifying the file path
 - added an 'about' page with route
 - making modifications to the index page, which will serve as our primary page for character creation;
 need to discuss and outline potential layouts before implementation.
-- **Note: May need to reload page + cache for proper updates. (Shift-Ctrl-R on Chrome).
+- **Note: May need to reload page + cache for proper updates. (Shift-Ctrl-R on Chrome).**
