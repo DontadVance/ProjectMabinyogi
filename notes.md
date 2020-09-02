@@ -13,7 +13,7 @@ when using render_template and it saves us time on specifying the file path
   - Navigate to the project folder and run "run.py"
   - the site will be at "localhost:5000/" where the / specifies our route
 
-  
+
 # Dylan
 ## Learning Flask
 - added a .gitignore file; feel free to edit.
