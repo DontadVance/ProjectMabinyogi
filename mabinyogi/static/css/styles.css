@@ -4,7 +4,12 @@ body {
 	overflow-y:scroll;
 }
 
-.back-primary {
+.title-primary {
+	font-family: "Lucida Console", Courier, monospace;
 	background-color: #444444;
 	color: #999999;
+}
+
+.box-primary {
+	border: 1px solid gray;
 }
