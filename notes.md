@@ -12,6 +12,20 @@ when using render_template and it saves us time on specifying the file path
   - I've gone ahead and set up a placeholder HTML file so that the site will run on initial run
   - Navigate to the project folder and run "run.py"
   - the site will be at "localhost:5000/" where the / specifies our route
+  
+## MongoDB Notes
+- Clusters hold databases
+- Databases store collections, which are simply collections of data e.g. restaurants
+- Collections store documents, which are entries to the databases
+- Indexing will be incredibly useful for debugging and small applications
+- Aggregation is where the real fun is at, we can filter and analyze the data based on a given set of criteria. We can use different operators to filter
+- **Note:** the default foreign key for documents seem to be "_id" and should be specified, if they aren't, it assigns an object id
+
+- **Querying results are sent back as Pymongo Cursor objects**
+  - look into how to interact with said results
+
+- To delete everything from a collection just use "collection.delete_many({})"
+- to drop a collection: db.collection_name.drop() ; returns true if one exists, else false
 
 
 # Dylan
