@@ -4,8 +4,8 @@
 - Each page will be declared by their own function as seen below
 '''
 from flask import render_template, url_for, redirect
-from mabinyogi import app, cluster #importing the flask application to specify routes
-from cluster import mage_collection, rogue_collection, warrior_collection
+from mabinyogi import app#importing the flask application to specify routes
+from mabinyogi.cluster import mage_collection, rogue_collection, warrior_collection
 
 #we define a specific web page route by using the @app.route decorator, think of it as adding a route to our application
 @app.route('/')
