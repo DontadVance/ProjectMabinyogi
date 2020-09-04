@@ -47,4 +47,4 @@ need to discuss and outline potential layouts before implementation.
 - Added WTForm inputs for Name, Stature, Race, Class + Input Validation.
 - Modified cluster.py to use an alternative reference; please feel free to change this if you need to! Just make sure it works (I couldn't get the previous format to work).
 - Added basic/temporary insertion of web form data into the MongoDB Warrior collection. I did this in order to verify that the web forms were working correctly + for understanding. No guarantee of good practice or implementation!
-- Extensive modification to CSS
+- Extensive modification to HTML/CSS
