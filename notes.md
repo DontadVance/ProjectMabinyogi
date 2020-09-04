@@ -12,7 +12,7 @@ when using render_template and it saves us time on specifying the file path
   - I've gone ahead and set up a placeholder HTML file so that the site will run on initial run
   - Navigate to the project folder and run "run.py"
   - the site will be at "localhost:5000/" where the / specifies our route
-  
+
 ## MongoDB Notes
 - Clusters hold databases
 - Databases store collections, which are simply collections of data e.g. restaurants
@@ -40,3 +40,11 @@ when using render_template and it saves us time on specifying the file path
 - making modifications to the index page, which will serve as our primary page for character creation;
 need to discuss and outline potential layouts before implementation.
 - **Note: May need to reload page + cache for proper updates. (Shift-Ctrl-R on Chrome).**
+
+### (9/3/2020)
+- Added a "create" page with route (form.html)
+- Migrated character creation from index.html to form.html
+- Added WTForm inputs for Name, Stature, Race, Class + Input Validation.
+- Modified cluster.py to use an alternative reference; please feel free to change this if you need to! Just make sure it works (I couldn't get the previous format to work).
+- Added basic/temporary insertion of web form data into the MongoDB Warrior collection. I did this in order to verify that the web forms were working correctly + for understanding. No guarantee of good practice or implementation!
+- Extensive modification to CSS
