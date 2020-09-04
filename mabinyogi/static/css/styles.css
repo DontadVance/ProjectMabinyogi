@@ -16,6 +16,6 @@ body {
 
 .sel-col {
 	display:flex;
-	justify-content: center;
+	justify-content: flex-start;
 	max-width: 100%;
 }

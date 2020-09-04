@@ -30,7 +30,7 @@
       {{ form.hidden_tag() }}
 
 			<!-- Name -->
-			<div class="col-sm-4 form-group">
+			<div class="col form-group">
 				{{ form.char_name.label }} {{ form.char_name(class="form-control") }}
 				{% if form.char_name.errors %}
 					<ul class="errors">
@@ -42,7 +42,7 @@
 			</div>
 
 			<!-- Race, Stature, Class -->
-			<div class="col-sm-4">
+			<div class="col">
 					<div class="form-group form-field">
 						{{ form.char_race.label }} {{ form.char_race(class="form-control") }}
 						{% if form.char_race.errors %}
@@ -83,7 +83,7 @@
 			<br/>
 
 			<!-- Item Type -->
-			<div class="col-sm-4 form-group">
+			<div class="col form-group">
 				<form>
 					<select class="form-control form-control-sm">
 						<option>Weapon</option>
@@ -94,7 +94,7 @@
 			</div>
 
 			<!-- Weapon, Armor -->
-			<div class="col-sm-4 form-group">
+			<div class="col form-group">
 				<select multiple class="form-control" id="exampleFormControlSelect2">
 		      <option>Wood Dagger</option> <!-- Note: Make options dynamic -->
 		      <option>Bronze Dagger</option>
