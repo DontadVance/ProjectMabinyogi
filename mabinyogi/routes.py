@@ -14,7 +14,7 @@ def homepage():
     form = forms.CharacterForm()
     if form.validate_on_submit():
         return redirect(url_for('homepage'))
-    return render_template('index.html') #we pass in the HTML file to render, you may change this accordingly
+    return render_template('index.html')
 
 @app.route('/about')
 def aboutpage():
