@@ -9,14 +9,20 @@ from mabinyogi.cluster import mage_collection, rogue_collection, warrior_collect
 from mabinyogi.forms import CharacterForm
 
 #we define a specific web page route by using the @app.route decorator, think of it as adding a route to our application
-@app.route('/', methods=('GET','POST'))
-@app.route('/home', methods=('GET','POST')) #notice we can specify more than one routing name for the same route
+@app.route('/')
+@app.route('/home')
 def homepage():
-    form = CharacterForm()
-    if form.validate_on_submit():
-        return redirect(url_for('homepage'))
-    return render_template('index.html', form=form)
+    return render_template('index.html')
 
 @app.route('/about')
 def aboutpage():
 	return render_template('about.html')
+
+@app.route('/create', methods=('GET','POST'))
+def createpage():
+    form = CharacterForm()
+    if form.validate_on_submit():
+        warrior_collection.insert({})
+        flash('Character added!', 'success')
+        return redirect(url_for('homepage'))
+    return render_template('form.html', form=form)
