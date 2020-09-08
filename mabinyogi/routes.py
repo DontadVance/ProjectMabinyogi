@@ -5,8 +5,8 @@
 '''
 from flask import render_template, url_for, redirect, request
 from mabinyogi import app #importing the flask application to specify routes
-from mabinyogi.cluster import mage_collection, rogue_collection, warrior_collection
 from mabinyogi.forms import CharacterForm
+from mabinyogi.utils import add_char
 
 #we define a specific web page route by using the @app.route decorator, think of it as adding a route to our application
 @app.route('/')
@@ -22,9 +22,6 @@ def aboutpage():
 def createpage():
     form = CharacterForm()
     if form.validate_on_submit():
-        warrior_collection.insert({'char_name': request.form.get('char_name'), #temporarily using warrior_collection alone to verify functionality. 
-                                'char_race': request.form.get('char_race'),
-                                'char_stature': request.form.get('char_stature'),
-                                'char_class': request.form.get('char_class')})
+        add_char(form)
         return redirect(url_for('homepage'))
     return render_template('form.html', form=form)

@@ -1,4 +1,36 @@
 # Vince
+### (9/7/20)
+- should we consider getting rid of the "char_" for form data variables?
+- added a utils file to handle utility functions
+- form data successfully routes to db according to class
+- starting on asset creation
+
+
+# Dylan
+### Learning Flask
+- added a .gitignore file; feel free to edit.
+- initiated templates and Jinja-friendly CSS links
+- added a static folder for CSS
+- added default.html; we can use this as our 'base' template. index.html extends default.html.
+
+### (9/1/2020)
+- added an 'about' page with route
+- making modifications to the index page, which will serve as our primary page for character creation;
+need to discuss and outline potential layouts before implementation.
+- **Note: May need to reload page + cache for proper updates. (Shift-Ctrl-R on Chrome).**
+
+### (9/3/2020)
+- Added a "create" page with route (form.html)
+- Migrated character creation from index.html to form.html
+- Added WTForm inputs for Name, Stature, Race, Class + Input Validation.
+- Modified cluster.py to use an alternative reference; please feel free to change this if you need to! Just make sure it works (I couldn't get the previous format to work).
+- Added basic/temporary insertion of web form data into the MongoDB Warrior collection. I did this in order to verify that the web forms were working correctly + for understanding. No guarantee of good practice or implementation!
+- Extensive modification to HTML/CSS
+
+
+
+
+#General
 ## Learning Flask
 - read the comments provided on routes.py
 - place any HTML files to render in our project's templates folder, this is a common Flask practice as flask will look for this directory
@@ -26,25 +58,3 @@ when using render_template and it saves us time on specifying the file path
 
 - To delete everything from a collection just use "collection.delete_many({})"
 - to drop a collection: db.collection_name.drop() ; returns true if one exists, else false
-
-
-# Dylan
-### Learning Flask
-- added a .gitignore file; feel free to edit.
-- initiated templates and Jinja-friendly CSS links
-- added a static folder for CSS
-- added default.html; we can use this as our 'base' template. index.html extends default.html.
-
-### (9/1/2020)
-- added an 'about' page with route
-- making modifications to the index page, which will serve as our primary page for character creation;
-need to discuss and outline potential layouts before implementation.
-- **Note: May need to reload page + cache for proper updates. (Shift-Ctrl-R on Chrome).**
-
-### (9/3/2020)
-- Added a "create" page with route (form.html)
-- Migrated character creation from index.html to form.html
-- Added WTForm inputs for Name, Stature, Race, Class + Input Validation.
-- Modified cluster.py to use an alternative reference; please feel free to change this if you need to! Just make sure it works (I couldn't get the previous format to work).
-- Added basic/temporary insertion of web form data into the MongoDB Warrior collection. I did this in order to verify that the web forms were working correctly + for understanding. No guarantee of good practice or implementation!
-- Extensive modification to HTML/CSS
