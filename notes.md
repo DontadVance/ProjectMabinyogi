@@ -27,10 +27,12 @@ need to discuss and outline potential layouts before implementation.
 - Added basic/temporary insertion of web form data into the MongoDB Warrior collection. I did this in order to verify that the web forms were working correctly + for understanding. No guarantee of good practice or implementation!
 - Extensive modification to HTML/CSS
 
+### (9/9/2020)
+- Added content to index.html and about.html
+- Added CSS classes for displaying content
+- Added CSS animations for fade-in
 
-
-
-#General
+# General
 ## Learning Flask
 - read the comments provided on routes.py
 - place any HTML files to render in our project's templates folder, this is a common Flask practice as flask will look for this directory
